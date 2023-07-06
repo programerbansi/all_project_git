@@ -1,0 +1,34 @@
+.radio-product {
+    display: flex;
+    margin-top: 17px;
+}
+
+.radio-product li {
+    display: flex;
+    margin-right: auto;
+}
+
+.file-img {
+    display: flex;
+    margin-top: -20px;
+    /* padding: 3px; */
+}
+
+.adpost-agree {
+    margin-bottom: 5px !important;
+}
+
+.radio-errmsg {
+    margin-top: 5px;
+}
+
+/* Product card action css */
+
+.heading {
+    padding: 8px;
+    color: #0044bb;
+}
+
+.heading:hover {
+    background-color: #e9f3ff94;
+}

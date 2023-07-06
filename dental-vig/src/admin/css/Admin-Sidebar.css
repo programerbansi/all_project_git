@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@300&display=swap');
+
+.css-10hburv-MuiTypography-root{
+    font-family: 'Anek Telugu', sans-serif !important;
+    line-height: 2 !important;
+    font-size: 18px !important;
+}
+
+/* Header */
+
+@media only screen and (min-width: 769px){
+    .css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper{
+        top: 50px !important;
+    }
+}
+@media only screen and (max-width:768px){
+    .css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper{
+        /* opacity: 0 !important; */
+        z-index: -1 !important;
+    }
+}

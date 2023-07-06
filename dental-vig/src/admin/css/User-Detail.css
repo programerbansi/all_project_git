@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@300&display=swap');
+
+.MuiTypography-body1{
+    font-family: 'Anek Telugu', sans-serif !important;
+    line-height: 2 !important;
+    font-size: 18px !important;
+    letter-spacing: 1px !important;
+}

@@ -1,0 +1,84 @@
+
+.user-select .css-13cymwt-control{
+    padding: 0px!important;
+    border: none!important;
+    min-height: 35.5px!important;
+}
+
+.user-select .css-1u9des2-indicatorSeparator{
+    margin: 0px!important;
+    display: none!important;
+}
+.user-select .css-tj5bde-Svg{
+    display: none!important;
+}
+.user-select .css-8mmkcg{
+    display: none!important;
+}
+.user-select .css-13cymwt-control:hover{
+    border-color: none!important;
+    border: none!important;
+    box-shadow: none!important;
+}
+.user-select .css-1sjk6ym-control:hover{
+    border-color: none!important;
+    border: none!important;
+    box-shadow: none!important;
+}
+
+.user-select .css-t3ipsp-control
+{
+    border-color: none!important;
+    border: none!important;
+    box-shadow: none!important;
+}
+.user-select .css-t3ipsp-control:hover{
+    border-color: none!important;
+    border: none!important;
+    box-shadow: none!important;
+}
+.user-select .css-1fdsijx-ValueContainer{
+    padding: 2px 12px!important;
+}
+.user-select .css-16xfy0z-control{
+    border-color: transparent!important;
+    background-color: transparent!important;
+    border-style: none!important;
+}
+.user-select .css-894a34-indicatorSeparator
+{
+    background-color: transparent!important;
+}
+.user-select .select-disable
+{
+    background-color: hsl(0, 0%, 95%)!important;
+    /* border-color: hsl(0, 0%, 90%); */
+}
+.user-select .css-pogzpp-loadingIndicator
+{
+    margin: 0!important;
+    padding: 0!important;
+    color: var(--blue)!important;
+}
+.user-select .css-1xc3v61-indicatorContainer
+{
+   
+    margin: 0!important;
+    padding: 0!important;
+    color: var(--blue)!important;
+}
+.user-select .css-o9ehiq-loadingIndicator
+{
+   
+    margin: 0!important;
+    padding: 0!important;
+    color: var(--blue)!important;
+}
+
+.user-select .css-15lsz6c-indicatorContainer
+{
+   
+    margin: 0!important;
+    padding: 0!important;
+    color: var(--blue)!important;
+}

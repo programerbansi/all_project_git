@@ -1,0 +1,252 @@
+.top-ads-close {
+
+    position: absolute;
+    top: 0px;
+    right: 190px;
+}
+
+.top-ads1 {
+    width: 728px;
+    height: 90px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+@media (max-width: 767px) {
+    .top-ads1 {
+        width: 310px;
+        height: 50px;
+    }
+}
+
+.left-ads-main {
+    width: 100%;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    position: sticky;
+    top: 300px;
+    z-index: 1;
+
+}
+
+.left-ads-main a {
+    margin-bottom: 20px;
+    margin-top: 20px
+}
+
+.left-ads1 {
+    width: 300px;
+    height: 100%;
+    object-fit: cover
+}
+
+.right-ads-main {
+    width: 100%;
+    height: auto;
+    position: sticky;
+    top: 300px;
+    z-index: 1;
+    display: grid;
+    justify-content: center;
+}
+
+.right-ads-main a {
+    margin-top: 20px;
+}
+
+@media (max-width: 1870px) and (min-width: 1440px) {
+
+    .left-ads1 {
+        width: 100% !important;
+        height: 100%;
+
+    }
+}
+
+@media (max-width: 320px) {
+    .left-ads1 {
+        width: 280px !important;
+        height: 100%;
+
+    }
+}
+
+/* @media screen and (min-width: 1440px) {
+    .left-ads-main {
+        margin-left: 50px;   
+    }
+
+    
+}
+@media (max-width: 1440px) and (min-width: 1040px) {
+    .left-ads-main {
+        margin-left: 5px;
+        width: 100%;
+        height: auto;
+       
+    }
+
+    .right-ads-main {
+       
+        width: 100%;
+        height: auto;
+    }
+    .left-ads {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .left-ads-main {
+        margin-left: 350px;
+    
+        margin-bottom: 15px;
+    }
+
+    .right-ads-main {
+        margin-left: 350px;
+        margin-top: 40px;
+       
+    }
+}
+@media (max-width: 768px) and (min-width: 400px){
+    .left-ads-main {
+        margin-left: 230px;
+    }
+
+    .right-ads-main {
+        margin-left: 230px;
+    }
+}
+@media (max-width: 425px) and (min-width: 375px){
+    .left-ads-main {
+        margin-left: 45px;
+    }
+
+    .right-ads-main {
+        margin-left: 45px;
+    }
+}
+@media (max-width: 375px) and (min-width: 330px){
+    .left-ads-main {
+        margin-left: 20px;
+    }
+
+    .right-ads-main {
+        margin-left: 20px;
+    }
+} */
+
+/* ----------------------------------------------Contact Us------------------------------------ */
+
+.fa-comment ,.fa-times{
+    color: rgb(253, 252, 252);
+}
+
+.contact-us {
+    background-image: url('../../assets/contact-us/contact-us.svg');
+
+    background-repeat: no-repeat;
+    height: 55px;
+    width: 90px;
+    position: fixed;
+    right: 3%;
+    bottom: 14%;
+    z-index: 2;
+
+    /* 
+    height: 100px;
+    width: 100px;
+    bottom: 6%;
+    */
+}
+
+.contact-us-logo {
+    border-radius: 50%;
+    margin-top: 20px;
+    height: 50px;
+    margin-left: 28px;
+    width: 50px;
+    padding: 11px;
+    font-size: 27px;
+    background-color: #0022aa;
+    text-align: center;
+    cursor: pointer;
+
+    /* height: 70px;
+    margin-left: 30px;
+     margin-top: 30px;
+    width: 70px;
+    padding: 20px;
+    font-size: 33px; */
+}
+
+@media only screen and (min-width: 2000px) {
+    .contact-us {
+       
+        height: 55px;
+        width: 90px;
+       
+    
+        /* height: 150px;
+        width: 150px; */
+    }
+
+    .contact-us-logo {
+        margin-top: 20px;
+        height: 50px;
+        margin-left: 28px;
+        width: 50px;
+        padding: 11px;
+        font-size: 27px;
+        text-align: center;
+        cursor: pointer;
+        /* height: 99px;
+        width: 99px;
+        margin-left: 43px;
+        margin-top: 36px;
+        font-size: 56px;
+        padding: 23px; */
+
+        /* height: 120px;
+        width: 120px;
+        margin-left: 39px;
+        margin-top: 36px;
+        font-size: 72px;
+        padding: 26px; */
+    }
+}
+
+
+.contact-us-form {
+    position: fixed;
+    /* top: 60%; */
+    bottom: 21%;
+    right: 2%;
+    z-index: 2;
+    width: 330px;
+    border: 1px solid #e9ecef38;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    height: auto;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 1530px) {
+    .contact-us-form {
+        bottom: 21%;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .contact-us-form {
+        width:79%;
+    }
+}
+@media screen and (min-width: 330px) and (max-width: 635px){
+    .contact-us-form {
+        width: 285px;
+    }
+}

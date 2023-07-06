@@ -1,0 +1,24 @@
+.types_header
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+/* .types_header:hover
+{
+   background-color: rgb(221, 239, 245);
+} */
+.sub-header-part .subcat-header-categories
+{
+    position: absolute;
+    height:auto;
+    /* width: auto; */
+    background-color: white;
+    z-index: 1020;
+    top:85%;
+    /* margin-top: 30px; */
+    left: auto;
+    box-shadow:0 1px 4px 0 rgb(0 0 0 / 10%) 
+
+}

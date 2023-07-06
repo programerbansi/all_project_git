@@ -1,0 +1,14 @@
+/* :root{
+    --blue:#0174c2;
+} */
+.blue-color{
+    color: var(--blue)!important;
+}
+.border-blue{
+    border-bottom: 3px solid var(--blue) ;
+}
+.header-tab
+{
+    position: relative;
+    top: 40px;
+}

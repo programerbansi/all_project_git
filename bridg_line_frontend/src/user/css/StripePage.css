@@ -1,0 +1,48 @@
+/* :root{
+    --blue:#0174c2;
+    --hoverblue:#0487de;
+} */
+.card-list
+{
+    list-style: none;
+    border: 1px solid gainsboro;
+    padding: 0;
+    max-height: 200px;
+    overflow: auto;
+}
+.card-list li{
+   
+    border-bottom: 1px solid gainsboro;
+    cursor: pointer;
+
+}
+.card-list .active
+{
+    background-color: #dfecff;
+}
+.bg-lavender
+{
+    background-color: #dfecff;
+}
+.main-stripe-width
+{
+ width: 50%;
+}
+@media (max-width: 1440px) {
+    .main-stripe-width
+    {
+     width: 70%!important;
+    }
+ }
+@media (max-width: 1024px) {
+    .main-stripe-width
+    {
+     width: 90%!important;
+    }
+ }
+@media (max-width: 768px) {
+   .main-stripe-width
+   {
+    width: 100%!important;
+   }
+}

@@ -1,0 +1,66 @@
+.profile-block img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20rem;
+    transition: 0.5s ease-in-out all;
+}
+
+.block {
+    height: 100vh;
+    background-color: rgb(241, 241, 252);
+    margin: auto;
+    display: flex;
+}
+
+.profile-block {
+    margin: auto;
+    width: 50%;
+}
+
+.card {
+    border: 1px solid rgb(232, 232, 233) !important;
+    box-shadow: 0px 5px 20px 0px;
+}
+
+.img-hover-zoom {
+    overflow: hidden;
+}
+
+.img-hover-zoom .content {
+    transition: transform .5s ease;
+}
+
+.img-hover-zoom:hover .content {
+    transform: scale(1.1);
+}
+.image_container img{
+    margin: auto;
+}
+.profile-block .image_container:hover img {
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.profile-block .image_container:hover .overlay {
+    opacity: 1;
+}
+
+.overlay {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.profile_content {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 50%;
+    color: steelblue;
+}
+
+.profile_content span {
+    color: black;
+}

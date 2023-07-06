@@ -1,0 +1,31 @@
+.msg_wrapper{
+    padding: 10px;
+    display: block;
+    width: auto;
+    letter-spacing: 1px;
+}
+.own{
+    background-color: rgb(55, 55, 255);
+    color: white;
+    display: block;
+    margin-left: auto;
+    border-top-left-radius: 23px;
+    border-bottom-left-radius: 23px;
+}
+.friend{
+    background-color: rgb(202, 202, 202);
+    color: white;
+    display: block;
+    margin-right: auto;
+    border-top-right-radius: 23px;
+    border-bottom-right-radius: 23px;
+}
+.check{
+    font-size: 15px;
+}
+.check-green{
+    color: #a5fda5;
+}
+.check-white{
+    color: white;
+}

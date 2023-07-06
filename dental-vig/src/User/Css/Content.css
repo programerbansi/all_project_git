@@ -1,0 +1,89 @@
+
+.feature-thumb-slider .slick-center
+{
+    width: 100%;
+    border: 2px solid rgb(11, 11, 185);
+    border-radius: 8px;
+}
+.feature-thumb
+{
+    margin: auto 0px!important;
+    display: block !important;
+    
+}
+.feature-thumb img
+{
+  border-color: transparent!important;
+}
+
+
+@media screen and (min-width:750px){
+    .slick-prev::before {
+        content: "←";
+        color: black;
+        border-radius: 50px;
+        padding: 40% ;
+        transition: .6s;
+        font-size: 25px;
+        display: none;
+    }
+    .slick-next::before {
+        content: "→";
+        padding: 40%;
+        color: black;
+        display: none;
+        border-radius: 50px;
+        transition: .6s;
+        font-size: 25px;
+        display: none;
+    }
+    .slick-prev{
+     left: -10px;
+     z-index: 2;
+    }
+    .slick-next{
+        right: 10px;
+        z-index: 2;
+    }
+  
+}
+
+ 
+/* Featured Part */
+
+.sub-slider .slick-slider:hover .slick-prev::before{
+    display: block;
+    color: white;
+}
+.sub-slider .slick-slider:hover .slick-next::before{
+    display: block;
+    color: white;
+}
+
+/* Recomended Part  */
+
+.recomend-part .row .recomended-cards .slick-slider:hover .slick-prev::before{
+    display: block;
+}
+.recomend-part .row .recomended-cards .slick-slider:hover .slick-next::before{
+    display: block;
+}
+
+/* Blog Part */
+
+.blog-part .recent-articles .slick-slider:hover .slick-prev::before
+{
+    display: block;
+}
+.blog-part  .slick-slider:hover .slick-next::before{
+    display: block;
+}
+/* header part */
+.suggest-part .slick-slider:hover .slick-prev::before
+{
+    display: block;
+}
+.suggest-part .slick-slider:hover .slick-next::before{
+    display: block;
+}
+/* joyu?? ha sir ne puchhvu pade ke hu left vali kari nakhu vali kr nakh */

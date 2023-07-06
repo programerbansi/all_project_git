@@ -1,0 +1,16 @@
+.block{
+    height: 100vh;
+    background-color:rgb(241, 241, 252);
+    margin: auto;
+    display: flex;
+}
+.signup-form{
+    margin: auto;
+    width: 50%;
+}
+.card{
+    border: 1px solid rgb(232, 232, 233) !important;
+}
+.card-footer .form-control{
+    border: none !important;
+}

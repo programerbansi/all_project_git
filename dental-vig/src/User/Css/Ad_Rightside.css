@@ -1,0 +1,100 @@
+.filter-action .nav-tabs
+{
+    border-bottom: none!important;
+}
+.filter-action .nav-tabs li .active
+{
+    color: none!important;
+    background: none!important;
+    border: none!important;
+    border-color: none!important;
+}
+
+.filter-action .nav-tabs li .nav-link:hover{
+    background: none;
+}
+.ad-feature-slider  .slick-center .feature-card
+{
+  
+    opacity: 1!important;
+}
+.header-filter .filter-show
+{
+   width: 300px!important;
+}
+.header-filter .filter-short
+{
+    width: 300px!important;
+}
+@media screen and (min-width: 1440px) {
+    .right-slider-main .feature-img img
+    {
+        height: 550px;
+    }
+}
+/* @media (max-width: 1799px) and (min-width: 1470px) {
+    .container-width
+    {
+        max-width: 60%!important;
+    }
+}
+@media (max-width: 1650px) and (min-width: 1470px) {
+    .container-width
+    {
+        max-width: 55%!important;
+    }
+} */
+@media (max-width: 1440px) and (min-width: 1040px) {
+    .right-slider-main .feature-img img
+    {
+        height: 500px;
+    }
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+    .right-slider-main .feature-img img
+    {
+        height: 450px;
+    }
+}
+@media (max-width: 768px) and (min-width: 400px){
+    .right-slider-main .feature-img img
+    {
+        height: 300px;
+    }
+}
+@media (max-width: 425px) and (min-width: 375px){
+    .right-slider-main .feature-img img
+    {
+        height:200px;
+    }
+}
+@media (max-width: 375px) and (min-width: 200px){
+    .right-slider-main .feature-img img
+    {
+        height: 150px;
+    }
+}
+/* .product-title-div .product-title a{
+        width: 250px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+ 
+} */
+ 
+.dropdown-menu li {
+    position: relative;
+    }
+    .dropdown-menu .dropdown-submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -7px;
+    }
+    .dropdown-menu .dropdown-submenu-left {
+    right: 100%;
+    left: auto;
+    }
+    .dropdown-menu > li:hover > .dropdown-submenu {
+    display: block;
+    }

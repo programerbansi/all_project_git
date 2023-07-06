@@ -1,0 +1,18 @@
+:root{
+    /* --blue:#0174c2; */
+    /* --hoverblue:#0487de; */
+    /* --lighblue:#cbdfed; */
+    --lighblue:#18556247;
+}
+.todo-content
+{
+    height: calc(100vh - 223px);
+    overflow-y: auto;
+}
+.table-header
+{
+    background-color: var(--lighblue);
+}
+.todo-content .table>:not(caption)>*>* {
+    padding: 15px 0.5rem;
+}

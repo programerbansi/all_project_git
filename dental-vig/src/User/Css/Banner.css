@@ -1,0 +1,10 @@
+
+.single-banner {
+    background: url('../../assets/home-bg.jpeg')!important;
+    background-position: right !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    padding: 100px 0px;
+    position: relative;
+    z-index: 1
+}

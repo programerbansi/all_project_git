@@ -1,0 +1,80 @@
+.msl-wrp
+{
+    background-color: white;
+    width: auto!important;
+}
+
+.msl-chip
+{
+    background-color:#0044bb;
+    color: white;
+}
+.btn-otp
+{
+    background-color: #0044bb;
+    font-size: 16px;
+    letter-spacing: 1px;
+
+}
+.h4-otp
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(54, 53, 53);
+}
+.resend-otp
+{
+    /* cursor: pointer;  */
+    font-weight: bold;
+    border: none!important;
+}
+.disable{
+    cursor: not-allowed;
+}
+.unable{
+    cursor: pointer;
+}
+/* .resend-otp:hover
+{
+    color: red!important;
+} */
+.otp-p
+{
+    font-size: 13px;
+    margin: 5px auto;
+}
+.sendotp-icon
+{
+    font-size: 100px;
+    color: #005AF5;
+    margin-bottom: 15px;
+}
+.swal-button
+{
+    background-color: #0044bb;
+    color: white;
+}
+.swal-button:not([disabled]):hover
+{
+    background-color: #0154e2;
+}
+.swal-title
+{
+    font-size: 20px;
+    color: rgb(46, 45, 45);
+}
+.swal-text
+{
+    font-size: 16px;
+    color: rgb(2, 2, 2);
+}
+
+/* password eye-slash */
+.eye-slash
+{
+    position: absolute;
+    top:15px;
+    left: 95%;
+    font-size: 20px;
+    color: #0044bb;
+    cursor: pointer;
+}

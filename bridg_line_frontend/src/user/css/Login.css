@@ -1,0 +1,29 @@
+:root{
+    /* --blue:#0174c2; */
+    /* --hoverblue:#0487de; */
+    --gray:#f7f7f7;
+    --lightblue:#0174c212;
+}
+.auth-wrapper
+{
+   /* margin-top: 50%; */
+}
+.auth-main-wrapper
+{
+    background-color: var(--lightblue);
+    min-height: 100vh;
+}
+.text-blue
+{
+    color: var(--blue);
+}
+.login-btn
+{
+    background-color: var(--blue)!important;
+    border-color: var(--blue)!important;
+}
+.login-btn:hover
+{
+    background-color: var(--hoverblue)!important;
+    border-color: var(--hoverblue)!important;
+}

@@ -1,0 +1,12 @@
+#pdf-controls {
+    display: none!important;
+}
+#WACStatusBarContainer {
+    display: none!important;
+}
+.react-pdf__Page__canvas , .react-pdf__Page__textContent , .react-pdf__Page__annotations , .react-pdf__Page ,.react-pdf__Document 
+{
+    width: 150px!important;
+    height: 150px!important;
+    /* margin-right: -122px!important; */
+}

@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu&display=swap');
+/* All Products */
+
+.css-11lq3yg-MuiGrid-root{
+    width: inherit !important;
+}
+
+/* All-Categories All-Brands All-Products */
+
+.css-dkwqln-MuiTypography-root {
+    font-family:'Anek Telugu', sans-serif !important;
+    font-weight: 500 !important;
+}
+.css-2ulfj5-MuiTypography-root,.css-1mo68eo-MuiTypography-root,.css-rtpxwx-MuiTypography-root {
+    font-family:'Anek Telugu', sans-serif !important;
+    font-weight: 300 !important;
+    letter-spacing: 1px !important;
+}
+@media only screen and (min-width: 600px){
+.css-z8iedv-MuiList-root {
+    /* width: calc(100% - 200px); */
+    margin-left: 240px;
+    width: auto !important;
+}
+}
