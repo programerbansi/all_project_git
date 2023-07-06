@@ -1,0 +1,17 @@
+.card .image_container:hover img {
+    opacity: 0.4 !important;
+    cursor: pointer !important;
+}
+
+.card .image_container:hover .overlay {
+    opacity: 1 !important;
+}
+
+.card .overlay {
+    transition: 0.5s ease !important;
+    opacity: 0 !important;
+    position: absolute !important;
+    top: 18% !important;
+    left: 47% !important;
+    text-align: center !important;
+}

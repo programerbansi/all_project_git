@@ -1,0 +1,22 @@
+.ticket-detail .info-box{
+    box-shadow: none !important;
+    border-bottom: 1px solid black;
+    border-radius: 0px !important;
+}
+.bg-admin{
+    background-color: #ededed;
+}
+.bg-current{
+    background-color: #def4ff;
+}
+
+/* Admin View Ticket Detail */
+
+.container-fluid .info-box{
+    box-shadow: none !important;
+    border-radius: 0px !important;
+    transition: .3s;
+}
+.container-fluid .info-box:hover{
+    border-bottom: 1px solid black;
+}

@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+        <style>
+              #main
+            {
+              display: flex;
+                /* float: left!important; */
+            }
+            /* #b4,#b7
+            {
+              /* display: block; */
+/*              
+              float: left;
+              clear: left;
+            }  */
+            .div1
+            {
+                width: 50px;
+                height: 50px;
+                background-color: white;
+                border: 1px solid black;
+                margin: 5px;
+            }
+            
+            .active
+            {
+                background-color: red;
+                color: white;
+                text-align: center;
+               
+            }
+            .active::before
+            {
+                content: "active";
+                
+                color: white;
+               
+            }
+        </style>
+       
+    </head>
+    <body>
+        <div id="main">
+          
+            <div class="div1 active"></div>
+            <div class="div1"></div>
+            <div class="div1"></div>
+            
+            <div class="div1" id="b4"></div>
+            <div class="div1"></div>
+            <div class="div1"></div>
+           
+            <div class="div1" id="b7"></div>
+            <div class="div1"></div>
+            <div class="div1"></div>
+          
+       </div>
+
+          <script>
+            var header = document.getElementById("main");
+            var btns = header.getElementsByClassName("div1");
+            for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+            console.log(current);
+            });
+            }
+</script>
+    </body>
+</html>

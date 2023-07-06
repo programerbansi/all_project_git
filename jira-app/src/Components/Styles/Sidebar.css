@@ -1,0 +1,38 @@
+a{
+    text-decoration: none !important;
+}
+aside nav ul li:nth-child(2):hover{
+    cursor: pointer;
+}
+.toggle-button{
+    outline: 1px solid #e3e0e0 !important;
+    border-radius: 8px !important;
+}
+
+.aside{
+    height: 100vh !important;
+    position: fixed !important;
+    background-color: white !important;
+}
+.aside nav button{
+    color: rgb(73, 72, 72) !important;
+}
+.aside nav button:hover{
+    color: red !important;
+}
+.aside .logout{
+    outline: 1px solid red;
+    border-radius: 10px;
+}
+.nav-sidebar li:hover{
+    cursor: pointer;
+}
+.nav-pills .nav-link.active{
+    background-color: rgb(42 42 251) !important;
+}
+.background{
+    background-color: rgb(212 212 229) !important;
+}
+.bg-active-project{
+    background-color: #e5e3e3;
+}

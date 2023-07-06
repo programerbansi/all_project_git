@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+        <style>
+            #div1
+            {
+                width: 100px;
+                height: 100px;              
+                border: 1px solid black;
+                margin-top: 50px;
+            }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+       
+           <script>
+           $(document).ready(function(){
+                $("#s1").change(function(e){
+                    var dis=$(this).val();
+                    // alert(dis);
+                    console.log(dis);
+                    $("#div1").animate({
+                    width: dis,
+                    });
+                });
+
+                $("#s2").change(function(){
+                    var dis=$(this).val();
+                    console.log(dis);
+                    $("#div1").animate({
+                    height: dis,
+                    });
+                });
+
+                $("#s3").change(function(){
+                    var dis=$(this).val();
+                    console.log(dis);
+                    $("#div1").css("background-color", dis);
+                   
+                });
+                });
+       
+        </script>
+    </head>
+    <body>
+       
+       <select id="s1">
+            <option selected disabled value="Choose One">Choose width</option>
+            <option value="50">50</option>
+            <option value="150">150</option>
+            <option value="300">300</option> 
+            <option value="350">350</option>
+            <option value="400">400</option>
+            <option value="450">450</option>         
+            <option value="500">500</option>         
+       </select>
+       <select id="s2">
+        <option selected disabled value="Choose One">Choose height</option>           
+        <option value="50">50</option>
+        <option value="150">150</option>
+        <option value="300">300</option>  
+        <option value="350">350</option>
+        <option value="400">400</option>
+        <option value="450">450</option>         
+        <option value="500">500</option>         
+       </select>
+        <select id="s3">
+            <option selected disabled value="Choose One">Choose color</option>
+            <option value="Pink">Pink</option>
+            <option value="Gray">Gray</option>
+            <option value="Blue">Blue</option>   
+            <option value="Green">Green</option>
+            <option value="Yellow">Yellow</option>
+            <option value="Red">Red</option>           
+        </select>
+        <div id="div1">
+
+        </div>
+    </body>
+</html>

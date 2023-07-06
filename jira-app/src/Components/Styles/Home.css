@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+.home_block1{
+    background-image: linear-gradient(to right top, #ffffff, #fafaff, #f4f4ff, #ecf0ff, #e4ebff, #e4ebff, #e4ebff, #e4ebff, #ecf0ff, #f4f4ff, #fafaff, #ffffff);
+    padding: 100px 50px !important;
+}
+.home_block1 .row:nth-child(1){
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.home_block1 .row:nth-child(1) h4{
+    margin-top: 25px;
+}
+.home_block1 .row:nth-child(1):nth-child(1) .btn{
+    margin-top: 25px !important;
+    border-radius: 0px !important;
+}
+
+/* home-block2 */
+
+.home_block2{
+    background-image: linear-gradient(to right top, #315399, #2a498b, #233f7d, #1c356f, #142c62, #1a3169, #203770, #263c77
+    , #3a5395, #4e6bb4, #6185d5, #759ff6);
+}
+.home_block2 .block2-content{
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+.home_block2 .block2-content button{
+    color: white;
+    outline: 1px solid grey;
+    margin-bottom: 30px;
+}

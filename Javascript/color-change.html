@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title></title>
+      
+        <style>
+        
+            .div1
+            {
+              float: left;
+            }
+            #b4,#b7
+            {
+              /* display: block; */
+              clear: left;
+              float: left;
+            }
+            .div1
+            {
+                width: 50px;
+                height: 50px;
+                background-color: white;
+                border: 1px solid black;
+                margin: 5px;
+            }
+            .active
+            {
+              background-color: rgb(73, 72, 72);
+              color: white;
+            }
+            .active::before
+            {
+              content: "Active";
+              color: white;
+            }
+            .active1::before
+            {
+              content: "Deactive";
+              color: black;
+            }
+          
+        </style>
+         
+ 
+    </head>
+
+    <body>
+     
+     
+          
+              <div class="div1 active"></div>
+              <div class="div1"></div>
+              <div class="div1"></div>
+              <div class="div1" id="b4"></div>
+              <div class="div1"></div>
+              <div class="div1"></div>
+              <div class="div1" id="b7"></div>
+              <div class="div1"></div>
+              <div class="div1"></div>
+            
+    
+         <script>
+          let buttons=document.querySelectorAll('div');
+          buttons.forEach(button=>{
+            button.addEventListener('click',function(){
+              buttons.forEach(btn=>{btn.classList.remove('active');  
+                 
+            })
+              this.classList.add('active');
+             
+             
+            })
+          })  
+  </script>
+    </body>
+</html>

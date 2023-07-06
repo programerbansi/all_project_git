@@ -1,0 +1,54 @@
+
+:root {
+    --blue:  #005DBF;
+    --white: #ffffff;
+    --aliceblue:#f0f8ff;
+  }
+
+  
+.heading-text span {
+    color: var(--blue)
+}
+
+.home-container {
+    background-color: var(--aliceblue);
+    height: 500px;
+}
+
+.template-image {
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+    .template-image {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:577px) {
+    .template-image {
+        height: 350px;
+        width: 300px;
+    }
+}
+
+.template-container{
+    position: relative;
+    cursor: pointer;
+}
+.template-container .btn ,  .get-started .btn{
+    background-color: var(--blue);
+    text-transform: capitalize;
+}
+.overlay{
+    position: absolute;
+    bottom: 10%;
+    right: 38%;
+    opacity: 0;
+    transition: .3s;
+}
+.template-container:hover .overlay{
+    opacity: 1;
+}

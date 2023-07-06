@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300&family=Source+Sans+Pro:wght@200&display=swap");
+
+:root {
+  --gray: #80808052;
+  --headings_color: #747474;
+  --text_color: #6c757d;
+  --span_color: #a3a3a3;
+  --template_border_color:#e6e6e6
+}
+
+/* ----------------------------------container-------------------------------------- */
+
+.template1{
+    /* border: 1px solid var(--template_border_color); */
+    /* border-radius: 10px; */
+}
+.text-color {
+  color: var(--text_color);
+}
+.headings {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-align: start;
+  padding: 15px 0px;
+  margin: 5px 0px;
+  color: var(--headings_color);
+}
+
+.heading {
+  text-transform: capitalize;
+  font-weight: 700;
+  text-align: start;
+  padding: 15px 0px;
+}
+
+.font-family {
+  font-family: "Chivo Mono", monospace;
+}
+.font-size {
+  font-size: 13px;
+}
+.word-break{
+  word-break:break-all;
+}
+.profile-text {
+  text-align: justify;
+}
+
+.border-bottom {
+  border-bottom: 1px solid var(--gray);
+}
+.border-left {
+  border-left: 1px solid var(--gray);
+}
+
+.border-right {
+  border-right: 1px solid var(--gray);
+}
+
+.skill-ul {
+  list-style: none;
+  text-align: start;
+  padding: 0px;
+  word-break:break-all;
+}
+.skill-ul li{
+  margin: 5px 0px;
+}
+.education h6 {
+  text-transform: uppercase;
+  text-align: start;
+}
+.education p {
+  text-align: start;
+}
+.skill,
+.education {
+  /* height: 270px; */
+}
+.experience {
+  height: 540px;
+  /* padding: 0px 10px; */
+}
+.experience p,
+h6 {
+  text-align: start;
+}
+.experience span {
+  font-size: 10px;
+  color: var(--span_color);
+}
+
+/* ---------------------------user profile section------------------------ */
+.user-row{
+    height: 270px;
+    position: relative;
+}
+
+.user-profile-section{
+    background-color: aliceblue;
+    height: 200px;
+}
+.image-overlay img{
+    display: block;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.image-overlay{
+    margin: -3rem 0 2rem 1rem;
+    padding: 1rem;
+    background: rgba(white, 0.8);
+    position: absolute;
+    z-index: 100;
+    top: 49%;
+    right: 10%;
+}
+.user-profile-section h1{
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+.user-profile-section h1 .name , .user-profile-section h4{
+    color: gray;
+    letter-spacing: 5px;
+}
+.user-profile-section h4 .surname{
+    color: black;
+    font-weight: 700;
+}
+
+/* @media screen and (min-width:320px) and (max-width:768px){
+    .user-profile-section h4{
+      position: absolute;
+      top: 25%;
+      left: 19%;
+      font-size: 18px;
+    }
+    .user-profile-section h1{
+      position: absolute;
+      top: 15%;
+      left: 15%;
+      font-size: 18px;
+      letter-spacing: 3px;
+    }
+} */
+@media screen and (max-width:768px) {
+
+
+  
+}

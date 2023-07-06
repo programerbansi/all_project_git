@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+:root {
+  --name_background: #0d2840;
+  --left_background: #d6e8f4;
+}
+
+.word_break{
+  word-break: break-all;
+}
+
+.font_family {
+  font-family: "Ubuntu", sans-serif;
+}
+.font_size {
+  font-size: 13px;
+}
+
+.user_profile_section {
+  height: 200px;
+}
+.user_name {
+  background-color: var(--name_background);
+  color: white;
+}
+.user_name h4 {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+.heading {
+  text-transform: capitalize;
+  font-weight: 700;
+  text-align: start;
+  padding: 15px 0px;
+}
+.skill_ul {
+  list-style: inside;
+  text-align: start;
+  padding: 0px;
+  word-break: break-all;
+}
+.skill_ul li{
+  margin: 5px 0px;
+}
+.text {
+  text-align: justify;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+}
+.left_detail{
+    background-color: var(--left_background);
+}
+.span_year{
+    font-size: 10px;
+}
+.name{
+  color: gray;
+  font-weight: 500;
+  font-size: 12px;
+  margin-bottom: 10px;
+}

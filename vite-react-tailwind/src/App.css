@@ -1,0 +1,4 @@
+.btn-tr{
+    transition: 0.3s;
+}
+.btn-tr:hover {opacity: 1}

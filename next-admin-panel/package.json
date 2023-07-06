@@ -1,0 +1,36 @@
+{
+  "name": "admin-panel",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@chakra-ui/icons": "^2.0.13",
+    "@chakra-ui/react": "^2.4.2",
+    "@emotion/core": "^11.0.0",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/styled-engine-sc": "^5.10.16",
+    "@next/font": "^13.0.6",
+    "@reduxjs/toolkit": "^1.9.1",
+    "axios": "^1.2.1",
+    "chakra-paginator": "^0.7.3",
+    "formik": "^2.2.9",
+    "framer-motion": "^6.5.1",
+    "next": "13.0.6",
+    "next-redux-wrapper": "^8.0.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.7.1",
+    "react-redux": "^8.0.5",
+    "redux-thunk": "^2.4.2",
+    "semantic-ui-css": "^2.5.0",
+    "semantic-ui-react": "^2.1.4",
+    "styled-components": "^5.3.6",
+    "yup": "^0.32.11"
+  }
+}

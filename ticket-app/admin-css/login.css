@@ -1,0 +1,40 @@
+.block{
+        height: 100vh;
+        background-color:rgb(241, 241, 252);
+        margin: auto;
+        display: flex;
+        opacity: 1;
+        z-index: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+}
+
+.login-btn
+{
+    display: flex!important;
+    justify-content: center!important;
+    align-items: center!important;
+}
+.login-user-icon
+{
+    font-size: 100px;
+}
+@media (max-width: 2560px) and (min-width: 1440px){
+    .login-container{   
+        width: 50%;
+    } 
+}
+@media (max-width: 1441px) and (min-width: 1024px){
+    .login-container{   
+        width: 55%;
+    } 
+}
+@media (max-width: 1025px) and (min-width: 994px){
+    .login-container{   
+        width: 60%;
+    } 
+}
+.link-hover:hover{
+    color: blue!important;
+}

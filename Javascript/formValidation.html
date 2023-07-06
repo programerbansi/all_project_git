@@ -1,0 +1,284 @@
+<html>
+    <head>
+        <title>
+            Form Validation
+        </title>
+        <style>
+            .div1
+            {
+                border: 1px solid black;
+                width: 30%;
+                padding: 15px;
+                text-align: center;
+                margin-left: 700px;
+                margin-top: 100px;
+            }
+            .active
+            {
+                border: 1px solid red;
+            }
+            
+         
+        </style>
+          <script>
+          
+
+
+           function handleClick()
+           {
+            const name = /^[A-Za-z]+$/;
+            const email=/^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/;
+            const number=/^(\+\d{1,3}[- ]?)?\d{10}$/;
+            const address=/^[0-9a-zA-Z\s,-]+$/;
+            const pincode=/^[1-9][0-9]{5}$/;
+            
+            const nm = document.getElementById('t1').value;
+            const em = document.getElementById('t2').value;
+            const no = document.getElementById('t3').value;
+            const addr = document.getElementById('t4').value;
+            const pin = document.getElementById('t5').value;
+            const state=document.getElementById('s1').value;
+            const city=document.getElementById('s2').value;
+
+            const a1=document.getElementById("t1").classList;
+            const a2=document.getElementById("t2").classList;
+            const a3=document.getElementById("t3").classList;
+            const a4=document.getElementById("t4").classList;
+            const a5=document.getElementById("t5").classList;
+            const a6=document.getElementById("s1").classList;
+            const a7=document.getElementById("s2").classList;
+          
+
+              if(nm == "")
+              {        
+                a1.add("active");
+                document.getElementById('span1').innerHTML="please enter name";
+                return false;
+                
+               
+              }
+              else if(!nm.match(name))
+              {
+                a1.add("active");
+                document.getElementById('span1').innerHTML="Please enter only alphabat";
+                return false;
+              }
+              else
+              {
+                a1.remove("active");
+                document.getElementById('span1').innerHTML=" ";
+           
+              }
+
+
+              if(em == "")
+              {        
+                a2.add("active");     
+                document.getElementById('span2').innerHTML="please enter email id";
+                return false;
+              }
+              else if(!em.match(email))
+              {  
+                a2.add("active");   
+                document.getElementById('span2').innerHTML="Please Enter Proper Email Id including . and @";
+                return false;
+              }
+              else 
+              {       
+                a2.remove("active");     
+                document.getElementById('span2').innerHTML=" ";
+              }
+
+               if(no == "")
+              {      
+                a3.add("active");         
+                document.getElementById('span3').innerHTML="please enter mobile no";
+                return false;
+              }
+              else if(no.match(name))
+              {
+                a3.add("active");
+                document.getElementById('span3').innerHTML="please enter only digits in mobile number";
+                return false;
+              }
+              else if(!no.match(number))
+              {
+                a3.add("active");
+                document.getElementById('span3').innerHTML="Please enter 10 digits in mobile number";   
+                return false;           
+              }
+              else{
+                a3.remove("active");
+                document.getElementById('span3').innerHTML=" ";
+              }
+
+               if(addr == "")
+              {  
+                a4.add("active");           
+                document.getElementById('span4').innerHTML="please enter address";
+                return false;                         
+              }
+              else if(!addr.match(address))
+              {
+                a4.add("active");
+                document.getElementById('span4').innerHTML="not allow special symbol in address (!,@,#,$,etc..)";
+                return false;         
+              }
+              else
+              {
+                a4.remove("active");
+                document.getElementById('span4').innerHTML=" ";
+              }
+
+              if(pin == "")
+              {   
+                a5.add("active");         
+                document.getElementById('span5').innerHTML="please enter pincode";
+                return false;        
+              }
+              else if(pin.match(name))
+              {      
+                a5.add("active");      
+                document.getElementById('span5').innerHTML="please enter only digits";
+                return false;        
+              }
+              else if(!pin.match(pincode))
+              {    
+                a5.add("active");      
+                document.getElementById('span5').innerHTML="please Enter only 6 digit and first digit not start with zero";
+                return false;        
+              }
+              else
+              {
+                a5.remove("active");
+                document.getElementById('span5').innerHTML=" ";
+              }
+
+              if(state.match(" "))
+              {
+                a6.add("active");
+                document.getElementById('span6').innerHTML="Select State";
+                return false;        
+              }
+              else{
+                a6.remove("active");
+                document.getElementById('span6').innerHTML="";
+              }
+              if(city.match(" "))
+              {
+                a7.add("active");
+                document.getElementById('span7').innerHTML="Select City";
+                return false;        
+              }
+              else{
+                a7.remove("active");
+                document.getElementById('span7').innerHTML="";
+              }
+            
+            
+           }
+           function handleSelect()
+           {
+            const state=document.getElementById('s1').value;
+            const city=document.getElementById('s2').value;
+             if(!city.match(" ") && state.match( " "))
+              {
+                // a6.add("active");
+                document.getElementById('span6').innerHTML="First select state after select city";
+                // alert("First Select State");
+                var s=document.getElementById('choose').value;
+                console.log(s);
+                document.getElementById('s2').value = s;
+                // return false;        
+
+              }
+              else
+              {
+                // a6.remove("active");
+                document.getElementById('span6').innerHTML="";
+              }
+           }
+
+        
+      </script>
+    </head>
+    <body>
+      
+        <form> 
+            <div class="div1">
+                <h3>Form Validation</h3>
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" id="t1"><br/><span id="span1"></span></td>
+                  
+                </tr>
+             
+                <tr>
+                    <td>Gender:</td>
+                    <td colspan="2"><input type="radio" name="gen" id="m" >Male
+                        <input type="radio" name="gen" id="f">Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="text" id="t2" placeholder="abc@gmail.com"><br/><span id="span2"></span></td>
+                </tr>
+                <tr>
+                    <td>Mobile No:</td>
+                    <td><input type="text" id="t3" ><br/><span id="span3"></span></td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td><textarea id="t4"></textarea><br/><span id="span4"></span></td>
+                </tr>
+                <tr>
+                    <td>Pincode No:</td>
+                    <td><input type="text" id="t5"><br/><span id="span5"></span></td>
+                </tr>
+                <tr>
+                    <td>state:</td>
+                    <td><select id="s1">
+                        <option selected disabled value="Choose State">Choose State</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="maharashtra">maharashtra</option>
+                        <option value="madhya pradesh">madhya pradesh</option>
+                    </select><br/><span id="span6"></span></td>
+                </tr>
+                <tr>
+                    <td>City:</td>
+                    <td><select id="s2" onclick="handleSelect()">
+                        <option selected disabled value="Choose City" id="choose">Choose City</option>
+                        <option value="Amreli">Amreli</option>
+                        <option value="Surat">Surat</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Udaypur">Udaypur</option>
+                        <option value="Bhopal">Bhopal</option>
+                    </select><br/><span id="span7"></span></td>
+                </tr>
+                <tr>
+                    <td>Hobbies:</td>
+                    <td>
+                        <input type="checkbox" id="c1" value="Playing">Playing 
+                        <input type="checkbox" id="c2" value="Singing">Singing 
+                        <input type="checkbox" id="c3" value="Dancing">Dancing
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><input type="button" value="Submit" onclick="handleClick()"></td>
+                </tr>
+              
+            </table>
+        </div>
+
+        </form>
+    <table>
+        <thead>
+
+        </thead>
+        <tbody id="tb">
+        </tbody>
+    </table>    
+    </body>
+</html>

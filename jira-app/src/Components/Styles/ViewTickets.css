@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
+.content-header{
+    font-family: 'Ubuntu', sans-serif;
+}
+.content .container-fluid .row:nth-child(1) div:hover{
+cursor: pointer !important;
+}
+.table-body{
+    display: none !important;
+}

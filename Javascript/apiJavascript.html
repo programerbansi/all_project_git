@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+        <style>
+           
+        </style>
+    </head>
+    <body>
+        <input type="text" id="search" onkeyup="handleSearch(this.value)" placeholder="Seach any data..." >
+       
+        <table id="table" border="1">  
+            <thead>
+                <th>User Id</th>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Completed</th>
+            </thead>     
+            <tbody id="tb">
+
+            </tbody>  
+        </table>   
+        <p id="p1"></p>
+        <script>
+             document.getElementById("search").focus(); 
+            var arr=[];
+            var search=[];
+            var row;
+            fetch ("https://jsonplaceholder.typicode.com/todos")
+            .then(x => x.json())
+            .then(data =>{                               
+                  console.log(data);
+                   arr=data;
+                     var tmp=" ";
+                           data.map((item,index)=>{
+                            tmp += "<tr>";
+                            tmp += "<td>" + item.userId + "</td>";
+                            tmp += "<td>" + item.id + "</td>";
+                            tmp += "<td>" + item.title + "</td>";
+                            tmp += "<td>" + item.completed+ "</td>";
+                            // tmp += "<td> <button>Edit</button> <button onclick=handleDelete("+data+","+index+")>Delete</button></td>"
+                            document.getElementById("tb").innerHTML= tmp;                          
+                            })
+                })
+            
+              function handleSearch(ele)
+              {
+                    console.log(ele);                  
+                    console.log(arr);                 
+                    row="";
+                    arr.filter((item,index)=>{
+                                    
+                        var str=item.title;
+                        console.log(str);
+                        if(str.includes(ele))
+                        {                             
+                            row += "<tr><td>" + item.userId + "</td><td>" + item.id + "</td><td>" + item.title + "</td><td>" + item.completed + "</td></tr>";
+                            document.getElementById("tb").innerHTML = row; 
+                         } 
+                         if(ele.length <= 0)
+                        {                         
+                            row=""
+                            document.getElementById("tb").innerHTML =row; 
+                            document.location.reload();
+                        
+                        }
+                    })
+                }
+            
+        </script>
+    </body>
+</html>

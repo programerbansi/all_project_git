@@ -1,0 +1,148 @@
+<html>
+
+<head>
+    <title>Form</title>
+    <style>
+        .div1 {
+
+            border: 1px solid black;
+            padding: 20px;
+            margin-bottom: 10px;
+            width: fit-content;
+            text-align: center;
+
+        }
+
+        #t3 {
+            display: none;
+        }
+    </style>
+    <script>
+        // var count = 0;
+        const records = [];
+        var data = {};
+        let flag = true;
+        const search=[];
+
+
+        function printRecord(records) {
+            let row = "<tr><th>Id</th><th>Name</th><th>Mobile No.</th><th>Opretion</th></tr>"
+            records.forEach((item, index) => {
+            row += "<tr><td>" + index + "</td><td>" + item.nm + "</td><td>" + item.no + "</td><td><button onclick=handeleEdit(" + index + ")>Edit</button><button onclick=handeleDelete(" + index + ")>Delete</button></td></tr>";
+             
+            });
+            // localStorage.setItem("data",JSON.stringify(records));
+            // row=localStorage.getItem('data');
+            // console.log("data:"+JSON.parse(row));
+            document.getElementById("table").innerHTML = row;
+           
+         
+        }
+        function handeleClick() {
+
+            var nm = document.getElementById('t1').value;
+            var no = document.getElementById('t2').value;
+            var id = document.getElementById('t3').value;
+            data = { "nm": nm, "no": no };
+            if (nm == "" && no == "") {
+                alert("Please fill the fields")
+            } else {
+                if (flag == true) {
+                    records.push(data);
+                }
+                else {
+                    records.splice(id, 1, data);
+                    document.getElementById("add").value = "ADD"
+                    flag = true;
+                }
+                printRecord(records);
+                clearText();
+
+            }
+           
+
+        }
+        function handeleEdit(index) {
+            flag = false;
+            var id = index;
+            document.getElementById("add").value = "UPDATE";
+            let getRecord = records[index];
+            // getRecord[1]['nm'] = 21;
+            console.log(getRecord['nm']);
+            document.getElementById("t3").value = index;
+            document.getElementById("t1").value = getRecord.nm;
+            document.getElementById("t2").value = getRecord.no;
+
+
+
+        }
+        function handeleDelete(index) {
+            // console.log(index);
+            records.splice(index, 1);
+            printRecord(records);
+        }
+        function clearText() {
+            document.getElementById("t1").value = "";
+            document.getElementById("t2").value = "";
+        }
+        function handleSearch(ele){
+            // let row = "<tr><th>Id</th><th>Name</th><th>Mobile No.</th></tr>"
+          records.filter((item,index)=>{
+               if(ele==item.nm || ele==item.no)
+               {
+                // alert(item.nm);
+                
+                var list;
+                row = "<tr><td>" + index + "</td><td>" + item.nm + "</td><td>" + item.no + "</td></tr>";
+                search.push(row);
+                // list.append(row);
+
+                // row += "<tr><td>" + index + "</td><td>" + item.nm + "</td><td>" + item.no + "</td><td><button onclick=handeleEdit(" + index + ")>Edit</button><button onclick=handeleDelete(" + index + ")>Delete</button></td></tr>"; 
+                document.getElementById("table").innerHTML =search; 
+               }
+            //    else
+            //    {
+            //     alert("no records");
+            //    }
+             
+              
+           })
+         
+          
+        }
+    </script>
+</head>
+
+<body>
+    <div class="div1">
+        <form>
+            <table>
+                <tr>
+                    <td><input type="text" id="t3"></td>
+                </tr>
+                <tr>
+                    <td><label for="Name">Name:</label></td>
+                    <td><input type="text" id="t1"></td>
+                </tr>
+                <tr>
+                    <td><label for="Mobile No">Mobile No:</label></td>
+                    <td> <input type="text" id="t2"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"> <input type="button" value="ADD" onclick="handeleClick()" id="add">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <form>
+        <input type="text" onchange="handleSearch(this.value)">
+    </form>
+    <table border="1" cellSpacing="0" id="table">
+    </table>
+    <h3>Search table</h3>
+    <table border="1" cellSpacing="0" id="table1">
+    </table>
+</body>
+
+</html>

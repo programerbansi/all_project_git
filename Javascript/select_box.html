@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <title>
+
+    </title>
+    <style>
+     *
+     {
+       text-align: center;
+     }
+.d1
+{}
+        #t2{
+        display: none;
+        }
+      
+    </style>
+
+</head>
+
+<body>
+   <div class="d1">
+    <form>
+        <select id="s1" onChange="btn_select()">
+        </select>
+        <input type="text" id="t1">
+        <input type="text" id="t2">
+        <input type="button" value="Update" onClick="btn_click()">
+    </form>
+   </div>
+
+    <script>
+        var arrayData = [1, 1, 3, 4, 6];
+        var x = document.getElementById('s1');
+        console.log(x.id);
+        let options = arrayData.map(x1 => `<option value=${x1}>${x1}</option>`).join("\n");
+        console.log(options);
+        x.innerHTML = options;
+        function btn_click() {
+            var data = document.getElementById("t1").value;
+            var list = document.getElementById("t2").value;
+            console.log("list" + list);
+
+            var select = document.getElementById('s1');
+            var values = Array.from(select).map(el => el.value);
+            console.log(values[list]);
+            var z = values[list] = data;
+            console.log(z);
+            console.log(values);
+            let options = values.map(x1 => `<option value=${x1}>${x1}</option>`).join("\n");
+            console.log(options);
+            x.innerHTML = options;
+
+        }
+        function btn_select() {
+            var select = document.getElementById('s1');
+            var option = select.options[select.selectedIndex];
+            document.getElementById("t2").value = select.selectedIndex;
+            document.getElementById('t1').value = option.value;
+        }
+    </script>
+</body>
+
+</html>

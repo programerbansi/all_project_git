@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+        <script>
+            
+            function handleClick()
+            {              
+                   var txt= document.getElementById("t1").value;
+                   
+                   if(!isNaN(txt))
+                   {
+                    //   document.getElementById("data").innerHTML= "Number"
+
+                      if(txt.length == 0)
+                      {
+                        document.getElementById("data").innerHTML= "Empty"
+                      }
+                      else
+                      {
+                        document.getElementById("data").innerHTML= "Number"
+                      }
+                   }
+                   else if(txt === "true" || txt === "false" || txt === "yes" || txt === "no" || txt === "on" || txt === "off")
+                   {
+                       document.getElementById("data").innerHTML= "Boolean"
+                   }
+                   else if (txt.startsWith('[') && txt.endsWith(']'))
+                   {
+                       document.getElementById("data").innerHTML= "Array"
+                   }
+                   else if (txt.startsWith('{') && txt.endsWith('}'))
+                   {
+                       document.getElementById("data").innerHTML= "Object"
+                   }
+                   else
+                   {
+                    document.getElementById("data").innerHTML= "String"
+                   }
+                 
+            }
+            function CheckArray()
+            {
+                 var arr=[1,2,"one","two","three","four"];
+                 var num=document.getElementById("t2").value;
+                 
+                 if(!isNaN(num))
+                 {
+                    if(num.length == 0)
+                      {
+                        document.getElementById("data1").innerHTML= "Empty"
+                      }
+                      else
+                      {
+                        var number=parseInt(num);
+                        document.getElementById("data1").innerHTML=arr.includes(number);
+                      }
+                  
+                 }
+                 else
+                 {
+                    document.getElementById("data1").innerHTML=arr.includes(num);
+                 }
+                 console.log(arr);
+                //  console.log(arr.includes(2));
+              
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <input type="text" id="t1">
+            <input type="button" value="Submit" onclick="handleClick()">
+            <h3 id="data"></h3>
+            <input type="text" id="t2">
+            <input type="button" value="Check Array" onclick="CheckArray()">
+            <h3 id="data1"></h3>
+        </form>
+    </body>
+</html>

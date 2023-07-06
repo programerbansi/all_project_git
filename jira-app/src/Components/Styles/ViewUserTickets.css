@@ -1,0 +1,10 @@
+.avatar .user-avatar{
+    cursor: pointer;
+    margin-left: -10px;
+}
+.avatar .user-avatar:nth-child(5){
+    margin-left: 0px !important;
+}
+.avatar .user-avatar .background{
+    background-color: rgb(57, 57, 254) !important;
+}

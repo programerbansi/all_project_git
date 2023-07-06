@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+
+:root {
+  --heading_background: #444440;
+  --heading_color: #ffffff;
+  --text_color: gray;
+  --left_background: #f4f4f4
+}
+
+.text_justify {
+  text-align: justify;
+}
+
+.font_family {
+  font-family: "Roboto Slab", serif;
+}
+
+.word_break{
+  word-break: break-all;
+}
+
+.text_color {
+  color: var(--text_color);
+}
+
+.fonr_size {
+  font-size: 13px;
+}
+
+.education_font_size {
+  font-size: 10px;
+}
+
+.left_detail {
+  background-color: var(--left_background);
+}
+
+.skill_ul {
+  list-style: inside;
+  text-align: start;
+  padding: 0px;
+}
+.skill_ul li{
+  margin: 5px 0px;
+}
+
+.image_container {
+  border-radius: 50%;
+  background-color: white;
+  border-color: 1px solid gray;
+  height:150px;
+  width:150px;
+  box-shadow: 1px 2px 3px #dadada;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.user_image {
+  height: 90%;
+  width: 90%;
+  border-radius: 50%;
+  position: absolute;
+  top: 2%;
+  left: 5%;
+  top: 5%;
+}
+
+.heading {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background-color: var(--heading_background);
+  color: var(--heading_color);
+  padding: 5px 0px;
+}
+
+/* ---------------------user name----------------------- */
+
+.profile_image {
+  /* height: 200px;
+  width: 200px; */
+  display: block;
+  margin: auto;
+}
+
+.user_name {
+  font-weight: 700;
+  text-transform: capitalize;
+  letter-spacing: 5px;
+  color: #4d4d4f;
+}
+
+.user_surname {
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: 5px;
+  color: #4d4d4f;
+}
+
+.h6 {
+  font-size: 20px;
+}
